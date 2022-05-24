@@ -23,7 +23,15 @@
   <img
     src={urlFor(image).width(maxWidth).fit('fillmax')}
     alt={alt || image.alt || ''}
-    style="aspect-ratio: {aspectRatio}; opacity: {loaded ? 1 : 0}; transition: .2s opacity;"
     on:load={() => (loaded = true)}
   />
+
+  <!-- <img
+  loading="lazy"
+  src={urlFor(image).width(maxWidth).fit('fillmax')}
+  alt={alt || image.alt || ''}
+  style="aspect-ratio: {aspectRatio}; opacity: {loaded ? 1 : 0}; transition: .2s opacity;"
+  on:load={() => (loaded = true)}
+/> -->
+
 {/if}
