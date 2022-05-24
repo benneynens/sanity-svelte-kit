@@ -25,6 +25,7 @@ export default createSchema({
     post,
     category,
     author,
+    images,
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
